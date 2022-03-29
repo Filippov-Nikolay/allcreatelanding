@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z9KXC7NX4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9Z9KXC7NX4');
+    </script> -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo-all.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="plugins/lightbox/css/lightbox.css">
+
+    <title>AllCreate</title>
+</head>
+<body>
+    <header id="home" class="header anim-block">
+        <div class="container">
+            <nav class="nav">
+                <div class="container">
+                    <div class="nav__wrapper">
+                        <a href="https://filippov-nikolay.github.io/allcreate/index.html" target="__blank" class="nav__logo"><img src="img/logo-allcreate.png" alt="AllCreate" class="nav__img"></a>
+                        <ul class="menu">
+                            <li class="menu__list"><a href="#home" class="menu__link" id="lang-home">Главная</a></li>
+                            <li class="menu__list"><a href="#portfolio" class="menu__link" id="lang-portfolio">Портфолио</a></li>
+                            <li class="menu__list"><a href="#skills" class="menu__link" id="lang-skills">Навыки</a></li>
+                            <li class="menu__list"><a href="#contacts" class="menu__link" id="lang-contacts">Контакты</a></li>
+                            <li class="menu__list"><a href="#reviews" class="menu__link" id="lang-reviews">Отзывы</a></li>
+                        </ul>
+                        <div class="lang">
+                            <img src="img/logo-lang.png" alt="lang-logo" class="lang__img">
+                            <select class="lang__item" id="select" value="lang" onclick="getValue();">
+                                <option id="lang-ru" class="lang__about" value="ru">русский</option>
+                                <option id="lang-ua" class="lang__about" value="ua">украинский</option>
+                                <option id="lang-en" class="lang__about" value="en">английский</option>
+                            </select>
+                        </div>
+                        <button class="burger-menu" onclick="openbox('box');">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="box anim-block" id="box" style="display: none;">
+                            <div class="container">
+                                <a href="#" class="overlay" onclick="openbox('box');">X</a>
+                                <div class="box__menu">
+                                    <ul class="menu menu__box">
+                                        <li class="menu__list"><a href="#home" class="menu__link" id="lang-home">Главная</a></li>
+                                        <li class="menu__list"><a href="#portfolio" class="menu__link" id="lang-portfolio">Портфолио</a></li>
+                                        <li class="menu__list"><a href="#skills" class="menu__link" id="lang-skills">Навыки</a></li>
+                                        <li class="menu__list"><a href="#contacts" class="menu__link" id="lang-contacts">Контакты</a></li>
+                                        <li class="menu__list"><a href="#reviews" class="menu__link" id="lang-reviews">Отзывы</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__offer">
+                    <h1 class="offer__title">ALLCreate</h1>
+                    <p id="lang-text" class="offer__sub-title">
+                        Создадим  сайт любой сложности, под ключ. Компания AllCreate готова предоставить и выполнить любые ваши идеи!
+                    </p>
+                    <a id="lang-button" href="#" class="offer__button">Заказать</a>
+                    <a href="#arrow-down" class="offer__arrow-down"><img src="img/arrow-down.png" alt="" class="arrow-down"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="arrow-down" class="main">
+        <section id="portfolio" class="section">
+            <div class="container">
+                <div class="section__content">
+                    <h1 id="lang-portfolio1" class="section__title">Портфолио</h1>
+                    <div class="section__about">
+                        <div class="section__item">
+                            <a href="img/img1.png" class="section__item-link" data-lightbox="portfolio-list"><img src="img/img1.png" alt="" class="section__item-img"></a>
+                            <p class="section__item-name">diker</p>
+                        </div>
+                        <div class="section__item">
+                            <a href="img/img2.png" class="section__item-link" data-lightbox="portfolio-list"><img src="img/img2.png" alt="" class="section__item-img"></a>
+                            <p class="section__item-name">site inspire</p>
+                        </div>
+                        <div class="section__item">
+                            <a href="img/img3.png" class="section__item-link" data-lightbox="portfolio-list"><img src="img/img3.png" alt="" class="section__item-img"></a>
+                            <p class="section__item-name">joker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section__content">
+                    <h1 id="lang-skills1" id="portfolio" class="section__title">Навыки</h1>
+                    <div class="section__about section__about-skills">
+                        <div class="section__item-skill">
+                            <img src="img/logo-html-с.png" alt="" class="section__skill-img filters">
+                            <div class="section__skill-name">HTML</div>
+                            <img src="img/starts.png" alt="" class="section__skill-stars">
+                        </div>
+                        <div class="section__item-skill">
+                            <img src="img/logo-css-c.png" alt="" class="section__skill-img filters">
+                            <div class="section__skill-name">CSS</div>
+                            <img src="img/starts.png" alt="" class="section__skill-stars">
+                        </div>
+                        <div class="section__item-skill">
+                            <img src="img/logo-figma-c.png" alt="" class="section__skill-img filters">
+                            <div class="section__skill-name">Figma</div>
+                            <img src="img/starts.png" alt="" class="section__skill-stars">
+                        </div>
+                        <div class="section__item-skill">
+                            <img src="img/logo-js-c.png" alt="" class="section__skill-img filters">
+                            <div class="section__skill-name">JavaScript</div>
+                            <img src="img/starts.png" alt="" class="section__skill-stars">
+                        </div>
+                        <div class="section__item-skill">
+                            <img src="img/logo-php-c.png" alt="" class="section__skill-img filters">
+                            <div class="section__skill-name">php</div>
+                            <img src="img/starts.png" alt="" class="section__skill-stars">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="section">
+            <div class="container">
+                <div class="section__content">
+                    <h1 id="lang-contacts1" class="section__title">Контакты</h1>
+                    <div class="section__about section__about-social">
+                        <a href="#" class="section__social">
+                            <img src="img/logo-telegram-c.png" alt="" class="social__img filters">
+                            <div class="social__name">telegram</div>
+                        </a>
+                        <a href="#" class="section__social">
+                            <img src="img/logo-instagram-c.png" alt="" class="social__img filters">
+                            <div class="social__name">instagram</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reviews" class="section">
+            <div class="container">
+                <div class="section__content">
+                    <h1 id="lang-reviews1" class="section__title">Отзывы</h1>
+                    <div class="section__about section__about-comments">
+                        <div class="comment">
+                            <img src="img/user.png" alt="" class="comment__img">
+                            <p id="lang-comment" class="comment__text">
+                                Всем, кто заинтересован в высококачественном и современном веб-сайте, рекомендуем обращаться в веб-студии AllCreate
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <img src="img/user.png" alt="" class="comment__img">
+                            <p id="lang-comment1" class="comment__text">
+                                Всем, кто заинтересован в высококачественном и современном веб-сайте, рекомендуем обращаться в веб-студии AllCreate
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <img src="img/user.png" alt="" class="comment__img">
+                            <p id="lang-comment2" class="comment__text">
+                                Всем, кто заинтересован в высококачественном и современном веб-сайте, рекомендуем обращаться в веб-студии AllCreate
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <img src="img/user.png" alt="" class="comment__img">
+                            <p id="lang-comment3" class="comment__text">
+                                Всем, кто заинтересован в высококачественном и современном веб-сайте, рекомендуем обращаться в веб-студии AllCreate
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <ul class="menu footer__menu">
+                    <li class="menu__list"><a href="#home" class="menu__link" id="lang-home2">Главная</a></li>
+                    <li class="menu__list"><a href="#portfolio" class="menu__link" id="lang-portfolio2">Портфолио</a></li>
+                    <li class="menu__list"><a href="#skills" class="menu__link" id="lang-skills2">Навыки</a></li>
+                    <li class="menu__list"><a href="#contacts" class="menu__link" id="lang-contacts2">Контакты</a></li>
+                    <li class="menu__list"><a href="#reviews" class="menu__link" id="lang-reviews2">Отзывы</a></li>
+                </ul>
+                <div class="footer__wrapper">
+                    <p class="footer__copyright">
+                        &copy; 2022 <span id="lang-copyright" >Все права защищенны. Сайт создал Филиппов Николай</span>
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-content">
+                            <img src="img/logo-telegram.png" alt="" class="footer__social-img">
+                            <div class="footer__social-name">telegram</div>
+                        </a>
+                        <a href="#" class="footer__social-content">
+                            <img src="img/logo-instagram.png" alt="" class="footer__social-img">
+                            <div class="footer__social-name">instagram</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/lang.js"></script>
+    <script src="js/main.js"></script>
+    <script src="plugins/lightbox/js/lightbox-plus-jquery.js"></script>
+</body>
+</html>

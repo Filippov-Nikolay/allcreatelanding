@@ -1,0 +1,50 @@
+@import url('normalize.css');
+@import url('landing.css');
+
+body {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section, footer{
+    padding: 60px 0;
+}
+
+/* firefox */
+body {
+    scrollbar-color: #b8b8b8 #fff; 
+    scrollbar-width: thin;  
+}
+
+/* chrome, opera, safari, yandex, microsoft-edge */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #b8b8b8;
+    border: 3px solid #fff;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.anim-block {
+    opacity: 0;
+    animation: show .5s 1;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-direction: alternate;
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

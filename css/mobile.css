@@ -1,0 +1,180 @@
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 1140px;
+
+        /* background-color: red; */
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 960px;
+	
+        /* background-color: green; */
+    }
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+
+        /* background-color: purple; */
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.menu__box {
+		display: block;
+	}
+
+	.burger-menu {
+		display: block;
+	}
+
+	.box__menu  .menu__list:not(:last-child) {
+		margin: 0 0 18px 0;
+	}
+
+	.offer__sub-title {
+		min-height: fit-content;
+		font-size: 24px;
+	}
+	
+	.section__about {
+		justify-content: center;
+	}
+
+	.section__item:not(:first-child) {
+		margin-top: 45px;
+	}
+
+	.section__about-skills {
+		justify-content: space-around;
+	}
+
+	.section__item-skill {
+		margin-bottom: 40px;
+	}
+
+	.section__about-social {
+		display: block;
+	}
+	
+	.section__social:not(:last-child) {
+		margin-bottom: 45px;
+	}
+
+	.comment {
+		width: 100%;
+	}
+
+	.comment__text {
+		font-size: 18px;
+	}	
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+
+        /* background-color: orange; */
+	}
+
+	.header__offer {
+		width: initial;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		padding: 0 10px;
+		width: 90%;
+
+        /* background-color: pink; */
+	}
+
+	.lang {
+		margin: 25px 0;
+	}
+
+	.lang__item {
+		text-align: center;
+	}
+
+	.lang__img {
+		display: none;
+	}
+
+	.box {
+		top: 80px;
+	}
+
+	.offer__title {
+		font-size: 40px;
+	}
+
+	.offer__sub-title {
+		font-size: 20px;
+	}
+	.offer__button {
+		padding: 12px 30px
+	}
+
+	.section__title {
+		font-size: 40px;
+	}
+
+	.social__img {
+		max-width: 85px;
+		max-height: 85px;
+	}
+
+	.social__name {
+		font-size: 30px;
+	}
+
+	.comment {
+		flex-direction: column;
+	}
+
+	.comment__img {
+		margin: 0 auto 20px;
+	}
+
+	.comment__text {
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.footer__menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.menu__list:not(:last-child) {
+		margin: 0 0 18px 0;
+	}
+
+	.footer__wrapper {
+		flex-direction: column;
+		justify-content: center;
+		padding-top: 70px;
+	}
+
+	.footer__copyright {
+		text-align: center;
+	}
+
+	.footer__social {
+		flex-direction: column;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+
+	.footer__social-content:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
